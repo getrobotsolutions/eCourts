@@ -1,6 +1,6 @@
 html{height: 1600px;}
 
-#container{height: 1075px !important;    border-bottom: 10px solid #eb2c2c;}
+#container{height: 1260px !important;    border-bottom: 10px solid #ca5100;}
 #container #contents {position: relative; height: 1180px;}
 #container #contents .photo_btn {position: absolute; display: block; float: left; margin-top: -14px;margin-left: 232px;}
 #container #contents .photo_btn  li {float: left;}
