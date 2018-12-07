@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+     
+    </style>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+<header>
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Config')" src="assets/logo.png">
+    </div>
+
+</header>
+
+<nav>
+
+</nav>
+
+<section class="main-content" style="height: 66%">
+   <h1 onclick="FC_ContentsCall('Welcome')" class="title">PRESS A BUTTON BELOW TO BEGIN</h1>
+    <div class="main-menu-matrix">
+      
+        <table>
+            <tr>
+                <td>
+                    <button onclick="FC_ContentsCall('Survey')" class="r0c1">
+                    <img src="assets/icons/calendar.png" style=""><br>
+                        <a id="txt_shopping">SCHEDULE</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="FC_ContentsCall('Map')" class="r1c0">
+                    <img src="assets/icons/map-3.png" ><br>
+                        <a id="txt_take_selfie">MAP</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="FC_ContentsCall('Linkden')" class="r0c1">
+                    <img src="assets/icons/folded-newspaper.png"><br>
+                        <a id="txt_shopping" style="">PUBLICATIONS</a>
+                    </button>
+                </td>                
+            </tr>
+            
+            <tr>
+                <td>
+                    <button onclick="FC_ContentsCall('Videos')" class="r0c1">
+                    <img src="assets/icons/video-camera.png"><br>
+                        <a id="txt_shopping">VIDEOS</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="FC_ContentsCall('Dance')" class="r1c0">
+                    <img src="assets/icons/dance.png"><br>
+                        <a id="txt_take_selfie">ROBOT DANCE</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="FC_ContentsCall('AvatarSelfie')" class="r0c2">
+                    <img src="assets/icons/camera.png"><br>
+                        <a id="txt_robot_avatar">ROBOT AVATAR + PHOTO</a>
+                    </button>
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+
+</section>
+
+<footer>
+  <div style="font-size: 70px;text-align: right;" class="col-sm-6">
+    Powered by
+  </div>
+  <div>
+    <img src="assets/icons/logo.png" width="400" class="col-sm-6">
+  </div>
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+
+</div>
+
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    /*function redirectToSS(){
+        window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,60000);
+
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });*/
+</script>
+
+</body>
+</html>

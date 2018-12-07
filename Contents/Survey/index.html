@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+<!-- demo 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/demo.css" rel="stylesheet">-->
+
+  <!-- jQuery & jQuery UI + theme (required) 
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+  <script src="js/jquery-latest.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>-->
+
+  <!-- keyboard widget css & script (required) 
+  <link href="css/keyboard.css" rel="stylesheet">
+  <script src="js/jquery.keyboard.js"></script>-->
+
+  <!-- keyboard extensions (optional) 
+  <script src="js/jquery.mousewheel.js"></script>-->
+  <!--
+  <script src="../js/jquery.keyboard.extension-typing.js"></script>
+  <script src="../js/jquery.keyboard.extension-autocomplete.js"></script>
+  -->
+
+  <!-- initialize keyboard (required) -->
+  <script>
+    /*$(function(){
+      $('input[type="text"], input[type="email"]').keyboard({
+        layout: 'custom',
+        customLayout: {
+          'normal': [
+            '` 1 2 3 4 5 6 7 8 9 0 - = {bksp}',
+            '{tab} q w e r t y u i o p [ ] \\',
+            'a s d f g h j k l ; \'',
+            '{shift} z x c v b n m , . / {shift}',
+            '{accept} {space} {left} {right} {sp:.2} {del} {toggle}'
+          ],
+          'shift': [
+            '~ ! @ # $ % ^ & * ( ) _ + {bksp}',
+            '{tab} Q W E R T Y U I O P { } |',
+            'A S D F G H J K L : " {enter}',
+            '{shift} Z X C V B N M &lt; &gt; ? {shift}',
+            '{accept} {space} {left} {right} {sp:.2} {del} {toggle}'
+          ]
+        }
+      })
+     ;
+    });*/
+  </script>
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+    
+</nav>
+
+<section class="main-content" style="">
+    <div class="bmg" style="">
+        <div class="header-w3ls">
+          </div>
+      <!-- multistep form -->
+      <div class="main-bothside">
+        <form action="http://robotaisolutions.com/robot-work/mitsubishi-survey-form-data.php" method="post" id="contactForm">
+            <div class="form-group">
+              <div class="personal-info">
+                <p>Which of the following social media websites do you actively use for networking and industry news? (Please select all that apply)</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="LinkedIn" id="LinkedIn" value="LinkedIn">
+                  <label class="form-check-label">
+                  LinkedIn
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Twitter" id="Twitter" value="Twitter">
+                  <label class="form-check-label">
+                  Twitter 
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Facebook" id="Facebook" value="Facebook">
+                  <label class="form-check-label">
+                  Facebook  
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="Instagram" id="Instagram" value="Instagram">
+                  <label class="form-check-label">
+                  Instagram 
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="other" id="other" value="Other">
+                  <label class="form-check-label">
+                  Other (please specify) :<input class="form-text" type="text" name="other-text" id="other-text">  
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="personal-info">
+                <p>During the past year, how many times would you say you have visited an MHPS Americas website changeinpower.com or amer.mhps.com?</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="visit" id="demo" value="1-2">
+                    <label class="form-check-label">
+                    1-2 times
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="visit" id="demo1" value="3-6">
+                    <label class="form-check-label">
+                    3-6 times  
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="visit" id="demo1" value="7-12">
+                    <label class="form-check-label">
+                    7-12 times  
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="visit" id="demo1" value="More than 12">
+                    <label class="form-check-label">
+                    More than 12 times  
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="visit" id="demo1" value="None">
+                    <label class="form-check-label">
+                    None  
+                    </label>
+                  </div>
+                </div>  
+              </div>
+              <div class="form-group">
+                <div class="form-mid-w3ls">
+                  <p>What word(s) first come to mind when you think of MHPS?</p>
+                  <input type="text" class="form-control" name="mphs" id="mphs" required="" placeholder="Type in Response">
+                </div>
+                
+              </div>
+            
+              <div class="form-mid-w3ls">
+                  
+              </div>
+
+          </form>
+          <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
+         <div id="form-success">Thank You for taking part in Survey</div>
+      </div>
+    </div>
+<div id="keyboard" class="keyboard" style="display: none">
+          <div class="top">
+            <font class="address" size="6px"><a id="address" onmousedown="return false"></a></font>
+            <img src="Images/keyboard/send.png" onclick="" id="ConfirmInput"> &nbsp;
+            <img src="Images/keyboard/cancel.png" onclick="HideKeyboard()">
+          </div>
+          <div class="wrap" >
+            <div class="line01">
+              <img src="Images/keyboard/1.png" onclick="keyboard('1')">
+              <img src="Images/keyboard/2.png" onclick="keyboard('2')">
+              <img src="Images/keyboard/3.png" onclick="keyboard('3')">
+              <img src="Images/keyboard/4.png" onclick="keyboard('4')">
+              <img src="Images/keyboard/5.png" onclick="keyboard('5')">
+              <img src="Images/keyboard/6.png" onclick="keyboard('6')">
+              <img src="Images/keyboard/7.png" onclick="keyboard('7')">
+              <img src="Images/keyboard/8.png" onclick="keyboard('8')">
+              <img src="Images/keyboard/9.png" onclick="keyboard('9')">
+              <img src="Images/keyboard/0.png" onclick="keyboard('0')">
+              <img src="Images/keyboard/delete.png" onclick="keyboard('bs')">
+            </div>
+
+            <div class="line02">
+              <img src="Images/keyboard/q.png" onclick="keyboard('q')">
+              <img src="Images/keyboard/w.png" onclick="keyboard('w')">
+              <img src="Images/keyboard/e.png" onclick="keyboard('e')">
+              <img src="Images/keyboard/r.png" onclick="keyboard('r')">
+              <img src="Images/keyboard/t.png" onclick="keyboard('t')">
+              <img src="Images/keyboard/y.png" onclick="keyboard('y')">
+              <img src="Images/keyboard/u.png" onclick="keyboard('u')">
+              <img src="Images/keyboard/i.png" onclick="keyboard('i')">
+              <img src="Images/keyboard/o.png" onclick="keyboard('o')">
+              <img src="Images/keyboard/p.png" onclick="keyboard('p')">
+            </div>
+
+            <div class="enter" >
+              <img src="Images/keyboard/enter.png" onclick="HideKeyboard()">
+            </div>
+
+            <div class="line03">
+              <img src="Images/keyboard/a.png" onclick="keyboard('a')">
+              <img src="Images/keyboard/s.png" onclick="keyboard('s')">
+              <img src="Images/keyboard/d.png" onclick="keyboard('d')">
+              <img src="Images/keyboard/f.png" onclick="keyboard('f')">
+              <img src="Images/keyboard/g.png" onclick="keyboard('g')">
+              <img src="Images/keyboard/h.png" onclick="keyboard('h')">
+              <img src="Images/keyboard/j.png" onclick="keyboard('j')">
+              <img src="Images/keyboard/k.png" onclick="keyboard('k')">
+              <img src="Images/keyboard/l.png" onclick="keyboard('l')">
+            </div>
+
+            <div class="line04">
+              <img src="Images/keyboard/z.png" onclick="keyboard('z')">
+              <img src="Images/keyboard/x.png" onclick="keyboard('x')">
+              <img src="Images/keyboard/c.png" onclick="keyboard('c')">
+              <img src="Images/keyboard/v.png" onclick="keyboard('v')">
+              <img src="Images/keyboard/b.png" onclick="keyboard('b')">
+              <img src="Images/keyboard/n.png" onclick="keyboard('n')">
+              <img src="Images/keyboard/m.png" onclick="keyboard('m')">
+              <img src="Images/keyboard/..png" onclick="keyboard('.')">
+              <img src="Images/keyboard/exclamation.png" onclick="keyboard('!')">
+              <img src="Images/keyboard/question.png" onclick="keyboard('?')">
+            </div>
+
+            <div class="line05">
+              <img src="Images/keyboard/-.png" onclick="keyboard('-')">
+              <img src="Images/keyboard/_.png" onclick="keyboard('_')">
+              <img src="Images/keyboard/spacebar.png" onclick="keyboard(' ')">
+              <img src="Images/keyboard/@.png" onclick="keyboard('@')">
+              <img src="Images/keyboard/gmail.png" onclick="keyboard('gmail.com')">
+              <img src="Images/keyboard/com.png" onclick="keyboard('.com')">
+            </div>
+          </div>
+        </div>
+</section>
+
+<footer>
+
+   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="4"></li>-->
+          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner " id="slide" role="listbox">
+
+          <div class="item active">
+            <img class="fixed-height" src="../../images/slider/1.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <!--<div class="item ">
+            <img class="fixed-height" src="../../images/slider/2.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="item ">
+            <img class="fixed-height" src="../../images/slider/3.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>-->
+
+        </div>   
+    </div>
+
+    <img src="../../assets/bottom-line.png" onclick="ShowPopupARS('../../images/contact.png')">
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+</div>
+<div id="dialog-overlay1"></div>
+<div id="dialog-box1">
+  <a href="#" class="button ok">Close</a>
+  <div class="dialog-content1">
+    <div id="dialog-message1">
+      <div class="form-mid-w3ls">
+        <p>Enter your email for a chance to win  an $100 Amazon gift card.</p>
+        <input type="email" class="form-control" name="email" id="email" required="">
+      </div>
+      <div class="form-mid-w3ls">
+        <br>
+        <button type="submit" id="form-submit1" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    //ShowImgPopup("img.jpeg");
+
+    
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<style type="text/css">
+    ul{list-style-type: none;}
+</style>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+  <link rel="stylesheet" type="text/css" href="RobotAvatar.css" />
+
+  <script language="JavaScript" type="text/javascript" src="../../Scripts/FlashPlayer.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+  <script language="JavaScript" type="text/javascript" src="RobotAvatar.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+
+
+  
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+
+  
+</head>
+
+<body onload="JSMain()" onbeforeunload="JSUnload()"  style="padding: 0; margin: 0; background-repeat: no-repeat; width: 1080px; height: 1920px; " class="noselect unselectable">
+<header>
+  <div class="logo">
+    <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+  </div>
+  
+</header>
+
+<nav>
+  <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+  
+</nav>
+
+
+<div class="main">
+  <div class="canvas">
+    <canvas id="camImage" width="935" height="520"></canvas>
+  </div>
+
+  <div class="bg">
+    <h1 class="titleAvatar" style="">Robot Avatar</h1>
+    <img src="Image/bg-new.png">
+    <p class="deltext" id="deltext" style="">If you want to delete the Avatar now press the 'DELETE' button.</p>
+  </div>
+
+  <div class="shot" id="shot">
+    <img id="shot" src="Image/avatar_shot_nor.png" onclick="shot()">
+  </div>
+
+   <div class="frame" id="frame" style="display: none">
+    <img src="Image/avatar_frame.png">
+  </div>
+  
+  <div class="number" id="number" style="display: none">
+    <img id="number_img" src="Image/3_re.png">
+  </div>
+ 
+  <div class="delete">
+    <button  onclick="del()" id="delete" disabled>DELETE</button>
+  </div>
+</div>
+
+<footer style="top: 1460px;">
+  <div style="font-size: 70px;text-align: right;color: white" class="col-sm-6">
+    Powered by
+  </div>
+  <div>
+    <img src="../../assets/icons/logo.png" width="400" class="col-sm-6">
+  </div>
+    
+  <!--<img src="../../assets/bottom-line.png" onclick="ShowPopupARS('images/contact.png')">-->
+</footer>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+</html>
