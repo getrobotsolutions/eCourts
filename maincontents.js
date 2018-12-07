@@ -33,9 +33,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
             //PlaySpeech(speak[1]);
             location.href = "Contents/Map/index.html";
             break;
-        case "Linkden":
+        case "Publications":
             //PlaySpeech(speak[2]);
-            location.href = "Contents/Linkden/index.html";
+            location.href = "Contents/Publications/index.html";
             break;
         
         case "Videos":
