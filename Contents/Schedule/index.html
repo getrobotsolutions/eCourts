@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/parking.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+    
+</nav>
+
+<section class="main-content" style="height: 69.9%;">
+  <div class="bmg">
+    <!--<h2 class="title">PRESS AN ARTICLE TO EMAIL IT</h2>-->
+    
+
+      <div class="nav">
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Sunday</a>
+          <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Monday</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Tuesday</a>
+          <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Wednesday</a>
+        </div>
+      </div>
+      <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div class="tab-pane " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <img src="images/sunday.png" width="1028">
+          </div>
+          <div class="tab-pane active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+             <img src="images/monday.png" width="1028">
+          </div>
+          <div class="tab-pane" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <img src="images/tuesday.png" width="1028">
+          </div>
+          <div class="tab-pane" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+              <img src="images/wednesday.png" width="1028">
+          </div>
+        </div>
+
+
+
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+  <div style="font-size: 70px;text-align: right;color: white" class="col-sm-6">
+    Powered by
+  </div>
+  <div>
+    <img src="../../assets/icons/logo.png" width="400" class="col-sm-6">
+  </div>
+</footer>
+<div id="dialog-overlay1"></div>
+  <div id="dialog-box1"><a class="btn-ok">Close</a>
+    <div id="dialog-content1">
+      <div id="dialog-message">
+        <form method="post" action="http://robotaisolutions.com/robot-work/ecourts-send-article-api.php" id="emailform">
+          <div class="form-group">
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-group">  
+            <button type="submit" name="submit" id="form-submit1" value="SEND">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/parking.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+
+
+</html>

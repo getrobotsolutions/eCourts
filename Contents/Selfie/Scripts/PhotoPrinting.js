@@ -266,7 +266,7 @@ function SendEmail()
     // 이미지 파일명 지정 및 저장
     var d = new Date();
 	var fileName = d.getTime();	
-	SaveImage(fileName);
+	SaveImage(addr);
     
     // 메일로 전송
     if (isRobot)

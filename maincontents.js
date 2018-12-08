@@ -25,9 +25,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
         case "Home":
            location.href = "../../maincontents.htm";
             break;
-        case "Survey":
+        case "Schedule":
             //PlaySpeech(speak[0]);
-            location.href = "Contents/Survey/index.html";
+            location.href = "Contents/Schedule/index.html";
             break;
         case "Map":
             //PlaySpeech(speak[1]);

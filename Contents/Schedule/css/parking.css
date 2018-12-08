@@ -157,10 +157,11 @@ p{
   color: white;
   width: 80%;
   margin-left: 93px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
   margin-top: 25px;
   height: 150px;
   line-height: 143px;
+
 
 }
 #dialog-overlay1 {
@@ -279,4 +280,65 @@ button{
     border: 0;
     background-color: #ca5100;
     color: white;
+}
+.nav{
+    background-color: #ca5100;
+    height: 80px;
+}
+
+.nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    
+    border-radius:0;
+
+}
+.nav > div a.nav-item.nav-link,
+.nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    
+    border-radius:0;
+    line-height: 80px;
+    font-size: 40px;
+}
+/*.nav > div a.nav-item.nav-link.active{
+  background:#ffffff4f;
+}*/
+
+/*.nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -77px;
+  left: -6%;
+  border: 15px solid transparent;
+  border-top-color: #e74c3c ;
+}*/
+.tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #e74c3c;
+    border-bottom:5px solid #e74c3c;
+    padding:30px 25px;
+}
+
+.nav > div a.nav-item.nav-link:hover,
+.nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #ffffff4f;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
+    text-decoration: none;
+}
+.tab-content>.active {
+    display: block;
+    height: 1200px;
+    overflow: scroll;
 }
