@@ -273,6 +273,18 @@ function SendEmail()
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
+    var canvas = document.getElementById('camImage');
+    var dataURL = canvas.toDataURL();
+      $.ajax({
+        type: "POST",
+        url: "http://robotaisolutions.com/robot-work/ecourts-selfie.php",
+        data: { 
+           imgBase64: dataURL,
+           'email':addr
+        }
+      }).done(function(response) {
+        console.log('saved: ' + response); 
+      });
     
     // 키보드 숨김
     HideKeyboard();
