@@ -14,6 +14,7 @@ $(document).click(function(event) {
 //-----------------------------------------------------
 
 var field;
+var link;
 
 function LanguageChange(lang)
 {
@@ -45,7 +46,8 @@ location.reload();
 var article="";
 $(document).ready(function(){
   $(".button-box").click(function(){
-   article=$(this).text();
+   article=$(this).attr("text");//$(this).text();
+   link=$(this).attr("link")
     ShowPopup();
     field=document.getElementById("email");
   });
@@ -81,7 +83,7 @@ $(document).ready(function(){
     e.preventDefault();
 
     var $action = $(this).prop('action');
-    var $data = $(this).serialize() + '&article=' + article;
+    var $data = $(this).serialize() + '&article=' + article + '&link=' +link;
     var $this = $(this);
 
     $this.prevAll('.alert').remove();

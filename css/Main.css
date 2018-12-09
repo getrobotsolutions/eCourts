@@ -294,3 +294,13 @@ iframe{border: none;}
 #myVideo {
     width: 1080px;
 }
+.ottawa-app{
+	margin-left: 196px;
+    margin-right: 0;
+    background-color: #263f6a;
+    color: #b25428;
+    width: 529px;
+    font-size: 35px;
+    padding: 20px 0;
+    font-weight: bold;
+}

@@ -1,15 +1,15 @@
 ﻿var speak = new Array( );
 
 
-        speak[0] = "Take a quick survey for a chance to win a $100 Amazon gift card";
-        speak[1] = "Learn about the Smart M501GAC Enhanced Response. The Ideal partner for Intermittent Renewables.";
-        speak[2] = "point Your smartphone at the Qr code and press your photo button to connect on LinkedIn";
-        speak[3] = "Read a welcome message from our dean.";
-        speak[4] = "Find out what classes you need for your major.";
+        speak[0] = "Here is the agenda for the E-Courts conference.";
+        speak[1] = "Here is the map for E-Courts.";
+        speak[2] = "Scroll the publications, click on those of interest, and I’ll email you the publication.";
+        speak[3] = "Click on the video you would like to watch.";
+        speak[4] = "Press a button to get started.";
         speak[5] = "";
         speak[6] = "It’s time to say cheese. Touch the camera icon to take a picture. ";
         speak[7] = "Smile! You are about to become a robot.";
-        speak[8] = "Pick a song and let’s boogie!";
+        speak[8] = "et’s boogie.  Pick a song, then press the play button.";
 
 //window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -26,20 +26,20 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "Schedule":
-            //PlaySpeech(speak[0]);
+            PlaySpeech(speak[0]);
             location.href = "Contents/Schedule/index.html";
             break;
         case "Map":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Map/index.html";
             break;
         case "Publications":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/Publications/index.html";
             break;
         
         case "Videos":
-            //PlaySpeech(speak[6]);
+            PlaySpeech(speak[3]);
             location.href = "Contents/Videos/index.html";
             break;
         case "Selfie":
@@ -55,9 +55,14 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Dance/index.html";
             break;
         case "AvatarSelfie":
-            //PlaySpeech(speak[8]);
+            PlaySpeech(speak[4]);
             location.href = "Contents/AvatarSelfie/index.html";
             break;
+        case "SlideShow":
+            //PlaySpeech(speak[4]);
+            location.href = "Contents/SlideShow/index.html";
+            break;
+            
             
         case "Config":
             location.href = "Config/Config.htm";
@@ -204,23 +209,23 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hello. Kon nichiwa, welcome to MHPS.  Touch a button on my screen to begin.");
+            window.external.PlaySpeech("Hi I’m Cora, the AI Courthouse Robot, press a button on my screen to begin.");
     }
 
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hello, come inside our booth and learn about the 5 changes of Power.");   
+        window.external.PlaySpeech("I like you, can I please take your picture?");   
     }
     if(btn_info[2] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Can I please take your picture?");
+            window.external.PlaySpeech("Hi, I’m Cora, my job is to provide improve the Courthouse experience for visitors and staff through Artificial Intelligence.");
     }
     if(btn_info[3] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hey, want to dance with me?");        
+        window.external.PlaySpeech("Bye-bye");        
     }
     if(btn_info[4] == '1'){
         //SetVolume(1);
