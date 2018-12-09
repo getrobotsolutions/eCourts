@@ -295,11 +295,12 @@ iframe{border: none;}
     width: 1080px;
 }
 .ottawa-app{
-	margin-left: 196px;
+	/*margin-left: 196px;
+	width: 529px;*/
     margin-right: 0;
     background-color: #263f6a;
     color: #b25428;
-    width: 529px;
+    
     font-size: 35px;
     padding: 20px 0;
     font-weight: bold;

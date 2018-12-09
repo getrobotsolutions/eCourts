@@ -43,6 +43,13 @@ location.reload();
 
 var article="";
 $(document).ready(function(){
+$(".nav-item").click(function(){
+    $(".nav-item").css("background-color", "transparent");
+    $(this).css("background-color", "#ffffff4f");
+
+});
+
+
   $(".button-box").click(function(){
    article=$(this).text();
     ShowPopup();
