@@ -262,7 +262,7 @@ function SendEmail()
     var pswd = "R0b0ts60";
     var port = 587;
     var ssl = "false";
-    
+    var e=addr;
     // 이미지 파일명 지정 및 저장
     var d = new Date();
 	var fileName = d.getTime();	
@@ -280,7 +280,7 @@ function SendEmail()
         url: "http://robotaisolutions.com/robot-work/ecourts-selfie.php",
         data: { 
            'imgBase64': dataURL,
-           'email':addr
+           'email':e
         }
       }).done(function(response) {
         console.log('saved: ' + response); 
