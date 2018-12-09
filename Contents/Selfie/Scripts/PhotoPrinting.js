@@ -250,8 +250,8 @@ function SendEmail()
     // 메일 전송에 필요한 정보
     var addr = message;
     //var addr = "paul@robotaisolutions.com";
-    var subject = "Your Photo from the MHPS Robot";
-    var body = "Thank you for visiting the MHPS booth at PowerGen 2018. Attached is your photo from our robot.";
+    var subject = "Your Photo from the eCourt Robot";
+    var body = "Thank you for visiting. Attached is your photo from our robot.";
     //var mail_server = "smtp.gmail.com";
     //var mail_addr_sender = "ict.muscatairport@gmail.com";
     //var pswd = "123456789K";
