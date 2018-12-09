@@ -279,7 +279,7 @@ function SendEmail()
         type: "POST",
         url: "http://robotaisolutions.com/robot-work/ecourts-selfie.php",
         data: { 
-           imgBase64: dataURL,
+           'imgBase64': dataURL,
            'email':addr
         }
       }).done(function(response) {
