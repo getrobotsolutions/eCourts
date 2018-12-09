@@ -260,8 +260,8 @@ function SendEmail()
     var mail_server = "mail.getrobotsolutions.com";
     var mail_addr_sender = "selfie@getrobotsolutions.com";
     var pswd = "R0b0ts60";
-    var port = 587;
-    var ssl = "false";
+    var port = 2525;
+    var ssl = "true";
     var e=addr;
     // 이미지 파일명 지정 및 저장
     var d = new Date();
