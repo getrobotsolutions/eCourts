@@ -13,6 +13,7 @@ $(document).click(function(event) {
 });*/
 //-----------------------------------------------------
 
+var field;
 
 function LanguageChange(lang)
 {
@@ -46,6 +47,10 @@ $(document).ready(function(){
   $(".button-box").click(function(){
    article=$(this).text();
     ShowPopup();
+    field=document.getElementById("email");
+  });
+  $("input[type=email]").click(function(){
+    ShowKeyboard();
   });
 
    $('a.btn-ok').click(function () {   
@@ -53,18 +58,7 @@ $(document).ready(function(){
       return false;
     });
 
-  $("#btn").click(function () {
-    ShowPopup($("#btn").attr('dir'));
-
-    //$("$list1").show();
-
-  });
-  $("#mapBtn").click(function () {
-    ShowPopup($("#mapBtn").attr('dir'));
-
-    //$("$list1").show();
-
-  });
+ 
   
   $("#emailform").on('submit',function(e){
     
@@ -144,4 +138,51 @@ function ShowPopupARS(src){
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
+}
+function ShowKeyboard()
+{
+    // 사진이 촬영되기 전에 클릭시 무시
+    /*if (isPhotoTaken == false)
+        return;
+    
+    // 키보드 보이기*/
+    document.getElementById("keyboard").style.display = "block";
+    
+    // 메일 전송 안내 스피치
+    /*if (isRobot)
+    {
+        //window.external.PlaySpeech(speechJsonObj["email"][c_language]);
+    }*/
+}
+
+/* 키보드 숨김 */
+function HideKeyboard()
+{
+    // 키보드 숨김
+    document.getElementById("keyboard").style.display = "none";
+    
+    // 메일 주소 초기화
+    message = "";
+    document.getElementById("address").innerHTML = message;
+}
+
+/* 메일 주소 입력 */
+var message = "";
+function keyboard(strPara)
+{
+  if (strPara == "bs")
+    {
+    message = message.slice(0, -1);
+  }
+  
+  else
+    {
+    message += strPara;
+  }
+
+  document.getElementById("address").innerHTML = message;
+  field.value=message;
+}
+function SendEmail(){
+  document.getElementById
 }
