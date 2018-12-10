@@ -131,13 +131,7 @@ a.button:hover {
 p{
   margin: 0 0 0;
 }
-.part1 h2{
-  color: white;
-  background-color: #e03d40;
-  height: 180px;
-  text-align: center;
-  padding: 55px 10px;
-}
+
 .button-box{
   background-color: #263e69;
   color: white;
