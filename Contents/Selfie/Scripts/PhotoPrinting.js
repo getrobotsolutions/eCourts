@@ -261,12 +261,12 @@ function SendEmail()
     var mail_addr_sender = "selfie@getrobotsolutions.com";
     var pswd = "R0b0ts60";
     var port = 2525;
-    var ssl = "true";
+    var ssl = "false";
     var e=addr;
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-	var fileName = d.getTime();	
-	SaveImage(addr);
+	var fileName = d.getTime();
+	SaveImage(addr+fileName);
     
     // 메일로 전송
     if (isRobot)
